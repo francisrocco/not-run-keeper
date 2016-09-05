@@ -5,6 +5,14 @@
   <%= link_to route.name, route_path(route) %><br>
 <% end %>
 <br>
-<%= link_to "View All Routes", routes_path %>
+<%= link_to "View All Routes", routes_path %><br><br>
+
+<h3>Your Runs:</h3>
+<% @user.runs.each do |run| %>
+  <%= link_to run.name, run_path(run) %><br>
+<% end %>
+<br>
 
 <h3>Add a Run:</h3>
+
+<%= link_to 'Log Out', signout_path %></p>
