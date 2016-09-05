@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  distance: 1.5
+  time: 2016-09-05 16:21:57
+  pace: 2016-09-05 16:21:57
+  route: one
+
+two:
+  name: MyString
+  distance: 1.5
+  time: 2016-09-05 16:21:57
+  pace: 2016-09-05 16:21:57
+  route: two
