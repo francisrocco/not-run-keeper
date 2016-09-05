@@ -6,8 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-francis = User.create({name: "Francis"})
-gab = User.create({name: "Gabriella"})
+francis = User.create({name: "Francis", password: "password"})
+gab = User.create({name: "Gabriella", password: "password"})
 
 elmont = Route.create({name: "Elmont 5K", distance: 3.1})
 boston = Route.create({name: "Boston Bridge Run", distance: 4})

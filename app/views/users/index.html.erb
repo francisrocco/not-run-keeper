@@ -1,0 +1,9 @@
+<h1>All Runners (Your Competition)</h1>
+
+<% @users.each do |user| %>
+  <% if session[:user_id] == user.id %>
+    <%= link_to "#{user.name} -- That's you!", user_path(user) %><br>
+  <% else %>
+    <%= link_to user.name, user_path(user) %><br>
+  <% end %>
+<% end %>

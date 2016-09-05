@@ -1,0 +1,9 @@
+<h1>This was a really good run! </h1>
+
+Runner: <%= @run.user.name %><br>
+Name: <%= @run.name %><br>
+Distance: <%= @run.distance %><br>
+Time: <%= @run.time %><br>
+Pace: <%= @run.pace %><br>
+<br>
+<%= link_to "Back to #{@run.user.name}'s Profile", user_path(@run.user) %>

@@ -1,0 +1,10 @@
+<h1><%= "#{@user.name}'s Runner Profile" %></h1>
+
+<h3>Your Routes:</h3>
+<% @user.routes.each do |route| %>
+  <%= link_to route.name, routes_path %><br>
+<% end %>
+<br>
+<%= link_to "View All Routes", routes_path %>
+
+<h3>Add a Run:</h3>
