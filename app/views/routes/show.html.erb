@@ -1,0 +1,10 @@
+<h1>This is a really cool route:</h1>
+
+Name: <%= @route.name %><br>
+Distance: <%= @route.distance %><br><br>
+
+Runners who have ran this route:<br><br>
+
+<% @route.users.each do |user| %>
+  <%= link_to user.name, user_path(user) %><br>
+<% end %>

@@ -2,7 +2,7 @@
 
 <h3>Your Routes:</h3>
 <% @user.routes.each do |route| %>
-  <%= link_to route.name, routes_path %><br>
+  <%= link_to route.name, route_path(route) %><br>
 <% end %>
 <br>
 <%= link_to "View All Routes", routes_path %>
